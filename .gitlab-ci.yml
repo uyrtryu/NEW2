@@ -1,0 +1,11 @@
+---
+stages:
+  - test
+  - release
+  - deploy
+
+include:
+  - project: cup/infrastructure/pipelines
+    ref: main
+    file:
+      - ci-pipeline-library.yml
